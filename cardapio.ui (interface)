@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>273</width>
+    <width>335</width>
     <height>257</height>
    </rect>
   </property>
@@ -65,6 +65,32 @@
       <string>RadioButton</string>
      </property>
     </widget>
+    <widget class="QRadioButton" name="radioButton_3">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>60</y>
+       <width>82</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>RadioButton</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_2">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>20</y>
+      <width>120</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>GroupBox</string>
+    </property>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menuBar">
@@ -72,7 +98,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>273</width>
+     <width>335</width>
      <height>21</height>
     </rect>
    </property>
@@ -91,4 +117,3 @@
  <resources/>
  <connections/>
 </ui>
-
