@@ -1,0 +1,14 @@
+     }
+    }
+
+    if (logado==1)
+    {
+        printf("\nLogin e/ou senha incorretos(s)\n");
+    }
+    else if (logado==2)
+    {
+        printf("\nLogado com sucesso!\nBem-vindo(a) %s\n",login[0]);
+    }
+
+    return 0;
+}
