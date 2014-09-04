@@ -19,3 +19,6 @@ cliente_info[MAX];
 void init_list(void);
 void enter(void);
 void deletea(void);
+void list(void);
+int menu_select(void);
+int busca_livre(void);
