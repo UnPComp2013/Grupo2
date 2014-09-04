@@ -16,9 +16,12 @@ struct cliente
 
 cliente_info[MAX];
 
-void init_list(void);
-void enter(void);
-void deletea(void);
-void list(void);
-int menu_select(void);
-int busca_livre(void);
+   void init_list(void);
+   void enter(void);
+   void deletea(void);
+   void list(void);
+   int menu_select(void);
+   int busca_livre(void);
+
+int main( void ) //Main DEVE retornar um int
+{
