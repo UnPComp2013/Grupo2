@@ -1,0 +1,22 @@
+else if (op == 3) exit(0);
+    system("cls");
+    printf("\n\tLogon\n");
+    printf("\n\tLogin: ");
+    scanf(" %s",login[0]);
+    printf("\n\tSenha: ");
+    scanf(" %s",senha[0]);
+
+
+    for (c=0;c<3;c++)
+    {
+        if ((strcmp(login[0],logando[c].user)!=0) || (strcmp(senha[0],logando[c].pass)!=0))
+        {
+            logado = 1; //login e/ou senha incorretos
+        }
+        else if(strcmp(login[0],logando[c].user)==0)
+        {
+            if (strcmp(senha[0],logando[c].pass)==0)
+            {
+                logado = 2; //logado com sucesso
+                break;
+            }
