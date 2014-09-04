@@ -1,0 +1,31 @@
+char *cadastro_senha()
+{
+    struct cadastro password[1];
+
+    puts("\tDigite a senha: ");
+    printf("\t");
+    scanf(" %s",password[0].pass);
+    system("cls");
+    return (password[0].pass);
+}
+
+int main(void)
+{
+    int a,b,c,d,nc;
+    int logado;
+    int op;
+    char login[1][20], senha[1][20];
+    struct cadastro logando[3];
+
+    printf("1 - Cadastro\n");
+    printf("2 - Logar\n");
+    printf("3 - Fechar\n");
+    scanf("%d", &op);
+    if (op == 1) {
+        printf("\nQuantos cadastros deseja fazer? \n");
+        scanf("%d",&nc);
+        for (a=0;a<nc;a++){
+            memcpy(logando[a].user, cadastro_login(), 50);
+            memcpy(logando[a].pass, cadastro_senha(), 50);
+        }
+    }
