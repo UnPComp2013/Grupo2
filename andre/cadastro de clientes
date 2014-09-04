@@ -14,3 +14,8 @@ struct cliente
    unsigned long int cep;
 }
 
+cliente_info[MAX];
+
+void init_list(void);
+void enter(void);
+void deletea(void);
