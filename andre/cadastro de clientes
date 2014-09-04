@@ -25,3 +25,8 @@ cliente_info[MAX];
 
 int main( void ) //Main DEVE retornar um int
 {
+int opcao;
+
+	init_list();/*inicializa a matriz de estruturas*/
+
+	for(;;)
