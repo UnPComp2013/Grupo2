@@ -30,3 +30,9 @@ int opcao;
 	init_list();/*inicializa a matriz de estruturas*/
 
 	for(;;)
+{
+	   opcao = menu_select();
+	   switch(opcao)
+	  {
+	  	 
+		  
