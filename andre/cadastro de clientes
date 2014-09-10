@@ -60,3 +60,9 @@ int menu_select(void) // você retorna uma variavel int, portanto a função tem
 
    printf("1. Inserir um cliente\n");
    printf("2. Excluir um cliente\n");
+    printf("3. Listar clientes\n");
+   printf("4. Sair\n");
+
+   do
+   {
+   
