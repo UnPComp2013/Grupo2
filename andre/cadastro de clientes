@@ -53,3 +53,5 @@ void init_list(void)
 
    for(t=0;t<MAX; ++t) cliente_info[t].nome[0] = 0;
 }
+int menu_select(void) // você retorna uma variavel int, portanto a função tem que retornar um int
+{
