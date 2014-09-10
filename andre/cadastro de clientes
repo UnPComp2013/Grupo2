@@ -73,3 +73,8 @@ int menu_select(void) // você retorna uma variavel int, portanto a função tem
    return c;
 }
    
+/* Insere  os clientes na lista */
+void enter(void)
+{
+   int slot;
+   char s[80];
