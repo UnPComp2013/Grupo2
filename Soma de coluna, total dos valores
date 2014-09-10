@@ -1,0 +1,31 @@
+#include<stdio.h>
+#include<conio.h>
+#define V 5
+#define S 4
+main()
+{
+int vendas[V][S], vendas_semana[V], vendas_mes=0, vendas_vendedor, v[V],m[S];
+int l, c, n, vendas_semanal;
+printf("Favor digitar as vendas por vendedor, em reais:\n");
+
+for(l=0;l<V;l++)
+{
+for(c=0;c<S;c++)
+{
+printf("\nVendedor %d:",l+1);
+scanf("%d",&vendas[l][c]);
+vendas_mes+=vendas[l][c];//Soma das vendas no mês
+vendas_vendedor+=vendas[l][c];
+vendas_semana[l]+= vendas[l][c];
+}
+v[l]=vendas_vendedor;
+vendas_vendedor=0;
+}
+
+printf("Total de vendas no mes: R$%d.00\n",vendas_mes);
+for(n=0;n<V;n++)
+printf("Vendas vendedor %d: %d.\n",n+1,v[n]);
+for(n=0;n<V;n++)
+printf("Vendas semana %d: %d.\n",n+1,vendas_semana[n]);
+getche();
+}
