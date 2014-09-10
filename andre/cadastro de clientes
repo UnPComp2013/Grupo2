@@ -66,3 +66,10 @@ int menu_select(void) // você retorna uma variavel int, portanto a função tem
    do
    {
    
+    printf("\nDigite sua escolha: ");
+
+	  scanf("%d", &c);
+   } while(c<0 || c>4);
+   return c;
+}
+   
