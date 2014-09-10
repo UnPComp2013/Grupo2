@@ -43,4 +43,6 @@ int opcao;
 		  case 4: exit(0);
 	  }
 	  	 
+   return 0;
+}
 		  
