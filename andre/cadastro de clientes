@@ -46,3 +46,10 @@ int opcao;
    return 0;
 }
 		  
+/* Inicializa a lista */
+void init_list(void)
+{
+   register int t;
+
+   for(t=0;t<MAX; ++t) cliente_info[t].nome[0] = 0;
+}
