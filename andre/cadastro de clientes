@@ -38,5 +38,9 @@ int opcao;
 		  break;
 		  case 2: deletea();
 		  break;
+		  case 3: list();
+		  break;
+		  case 4: exit(0);
+	  }
 	  	 
 		  
