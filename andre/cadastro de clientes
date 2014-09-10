@@ -34,5 +34,9 @@ int opcao;
 	   opcao = menu_select();
 	   switch(opcao)
 	  {
+	  case 1: enter();
+		  break;
+		  case 2: deletea();
+		  break;
 	  	 
 		  
