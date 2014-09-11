@@ -1,0 +1,5 @@
+/****** Script do comando SelectTopNRows de SSMS  ******/
+SELECT TOP 1000 [COD_CLI]
+      ,[NOME]
+      ,[SOBRENOME]
+  FROM [CADASTRO].[dbo].[CLIENTE]
