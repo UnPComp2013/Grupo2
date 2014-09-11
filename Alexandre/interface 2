@@ -1,0 +1,149 @@
+/***************************************************************
+ * Name:      restauranteMain.cpp
+ * Purpose:   Code for Application Frame
+ * Author:    Alexandre (Alexandre.silva_16@hotmail.com)
+ * Created:   2014-09-10
+ * Copyright: Alexandre ()
+ * License:
+ **************************************************************/
+
+#include "restauranteMain.h"
+#include <wx/msgdlg.h>
+
+//(*InternalHeaders(restauranteFrame)
+#include <wx/intl.h>
+#include <wx/string.h>
+//*)
+
+//helper functions
+enum wxbuildinfoformat {
+    short_f, long_f };
+
+wxString wxbuildinfo(wxbuildinfoformat format)
+{
+    wxString wxbuild(wxVERSION_STRING);
+
+    if (format == long_f )
+    {
+#if defined(__WXMSW__)
+        wxbuild << _T("-Windows");
+#elif defined(__UNIX__)
+        wxbuild << _T("-Linux");
+#endif
+
+#if wxUSE_UNICODE
+        wxbuild << _T("-Unicode build");
+#else
+        wxbuild << _T("-ANSI build");
+#endif // wxUSE_UNICODE
+    }
+
+    return wxbuild;
+}
+
+//(*IdInit(restauranteFrame)
+const long restauranteFrame::ID_TEXTCTRL1 = wxNewId();
+const long restauranteFrame::ID_TEXTCTRL2 = wxNewId();
+const long restauranteFrame::ID_BUTTON1 = wxNewId();
+const long restauranteFrame::ID_TEXTCTRL3 = wxNewId();
+const long restauranteFrame::ID_STATICTEXT1 = wxNewId();
+const long restauranteFrame::ID_STATICTEXT2 = wxNewId();
+const long restauranteFrame::ID_STATICTEXT3 = wxNewId();
+const long restauranteFrame::ID_STATICTEXT4 = wxNewId();
+const long restauranteFrame::idMenuQuit = wxNewId();
+const long restauranteFrame::idMenuAbout = wxNewId();
+const long restauranteFrame::ID_STATUSBAR1 = wxNewId();
+//*)
+
+BEGIN_EVENT_TABLE(restauranteFrame,wxFrame)
+    //(*EventTable(restauranteFrame)
+    //*)
+END_EVENT_TABLE()
+
+restauranteFrame::restauranteFrame(wxWindow* parent,wxWindowID id)
+{
+    //(*Initialize(restauranteFrame)
+    wxMenuItem* MenuItem2;
+    wxMenuItem* MenuItem1;
+    wxMenu* Menu1;
+    wxMenuBar* MenuBar1;
+    wxMenu* Menu2;
+
+    Create(parent, wxID_ANY, wxEmptyString, wxDefaultPosition, wxDefaultSize, wxDEFAULT_FRAME_STYLE, _T("wxID_ANY"));
+    TextCtrl1 = new wxTextCtrl(this, ID_TEXTCTRL1, _("3"), wxPoint(56,64), wxDefaultSize, 0, wxDefaultValidator, _T("ID_TEXTCTRL1"));
+    TextCtrl2 = new wxTextCtrl(this, ID_TEXTCTRL2, _("4"), wxPoint(48,112), wxDefaultSize, 0, wxDefaultValidator, _T("ID_TEXTCTRL2"));
+    Button1 = new wxButton(this, ID_BUTTON1, _("SOMAR"), wxPoint(64,144), wxDefaultSize, 0, wxDefaultValidator, _T("ID_BUTTON1"));
+    TextCtrl3 = new wxTextCtrl(this, ID_TEXTCTRL3, wxEmptyString, wxPoint(56,176), wxDefaultSize, 0, wxDefaultValidator, _T("ID_TEXTCTRL3"));
+    StaticText1 = new wxStaticText(this, ID_STATICTEXT1, _("x="), wxPoint(8,64), wxDefaultSize, 0, _T("ID_STATICTEXT1"));
+    StaticText2 = new wxStaticText(this, ID_STATICTEXT2, _("y="), wxPoint(16,120), wxDefaultSize, 0, _T("ID_STATICTEXT2"));
+    StaticText3 = new wxStaticText(this, ID_STATICTEXT3, _("Label"), wxPoint(824,248), wxDefaultSize, 0, _T("ID_STATICTEXT3"));
+    StaticText4 = new wxStaticText(this, ID_STATICTEXT4, _("x+y="), wxPoint(16,184), wxDefaultSize, 0, _T("ID_STATICTEXT4"));
+    MenuBar1 = new wxMenuBar();
+    Menu1 = new wxMenu();
+    MenuItem1 = new wxMenuItem(Menu1, idMenuQuit, _("Quit\tAlt-F4"), _("Quit the application"), wxITEM_NORMAL);
+    Menu1->Append(MenuItem1);
+    MenuBar1->Append(Menu1, _("&File"));
+    Menu2 = new wxMenu();
+    MenuItem2 = new wxMenuItem(Menu2, idMenuAbout, _("About\tF1"), _("Show info about this application"), wxITEM_NORMAL);
+    Menu2->Append(MenuItem2);
+    MenuBar1->Append(Menu2, _("Help"));
+    SetMenuBar(MenuBar1);
+    StatusBar1 = new wxStatusBar(this, ID_STATUSBAR1, 0, _T("ID_STATUSBAR1"));
+    int __wxStatusBarWidths_1[1] = { -1 };
+    int __wxStatusBarStyles_1[1] = { wxSB_NORMAL };
+    StatusBar1->SetFieldsCount(1,__wxStatusBarWidths_1);
+    StatusBar1->SetStatusStyles(1,__wxStatusBarStyles_1);
+    SetStatusBar(StatusBar1);
+
+    Connect(ID_TEXTCTRL1,wxEVT_COMMAND_TEXT_UPDATED,(wxObjectEventFunction)&restauranteFrame::OnTextCtrl1Text);
+    Connect(ID_TEXTCTRL2,wxEVT_COMMAND_TEXT_UPDATED,(wxObjectEventFunction)&restauranteFrame::OnTextCtrl2Text);
+    Connect(ID_BUTTON1,wxEVT_COMMAND_BUTTON_CLICKED,(wxObjectEventFunction)&restauranteFrame::OnButton1Click1);
+    Connect(idMenuQuit,wxEVT_COMMAND_MENU_SELECTED,(wxObjectEventFunction)&restauranteFrame::OnQuit);
+    Connect(idMenuAbout,wxEVT_COMMAND_MENU_SELECTED,(wxObjectEventFunction)&restauranteFrame::OnAbout);
+    Connect(wxID_ANY,wxEVT_CLOSE_WINDOW,(wxObjectEventFunction)&restauranteFrame::OnClose);
+    //*)
+}
+
+restauranteFrame::~restauranteFrame()
+{
+    //(*Destroy(restauranteFrame)
+    //*)
+}
+
+void restauranteFrame::OnQuit(wxCommandEvent& event)
+{
+    Close();
+}
+
+void restauranteFrame::OnAbout(wxCommandEvent& event)
+{
+    wxString msg = wxbuildinfo(long_f);
+    wxMessageBox(msg, _("Welcome to..."));
+}
+
+void restauranteFrame::OnTextCtrl1Text(wxCommandEvent& event)
+{
+}
+
+void restauranteFrame::OnClose(wxCloseEvent& event)
+{
+}
+
+void restauranteFrame::OnButton1Click(wxCommandEvent& event)
+{
+}
+
+void restauranteFrame::OnButton1Click1(wxCommandEvent& event)
+{
+    float x=0,y=0;
+    wxString res=wxT("");
+    if(TextCtrl1->GetValue().ToLong((&x)) and TextCtrl2->GetValue().ToLong((&y))){
+        res<<x+y;
+        TextCtrl3->SetValue(res);
+    }
+    else wxMessageBox(("um erro"));
+}
+
+void restauranteFrame::OnTextCtrl2Text(wxCommandEvent& event)
+{
+}
