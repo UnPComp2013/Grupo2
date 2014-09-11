@@ -40,17 +40,40 @@
      <string>Consulta Cardápio</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_3">
+   <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>190</x>
-      <y>20</y>
-      <width>75</width>
-      <height>23</height>
+      <x>20</x>
+      <y>70</y>
+      <width>46</width>
+      <height>13</height>
      </rect>
     </property>
     <property name="text">
-     <string>PushButton</string>
+     <string>TextLabel</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>70</y>
+      <width>46</width>
+      <height>13</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+   </widget>
+   <widget class="QCalendarWidget" name="calendarWidget">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>190</y>
+      <width>264</width>
+      <height>155</height>
+     </rect>
     </property>
    </widget>
   </widget>
