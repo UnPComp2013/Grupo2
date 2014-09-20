@@ -92,3 +92,6 @@ void enter(void)
 
    printf("Digite o telefone: ");
    gets(cliente_info[slot].telefone);
+
+   printf("Digite o endereco: ");
+   gets(cliente_info[slot].rua);
