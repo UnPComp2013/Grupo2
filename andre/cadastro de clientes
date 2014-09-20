@@ -86,3 +86,6 @@ void enter(void)
 	  printf("Lista cheia!");
 	  return;
    }
+   
+   printf("Digite o nome: ");
+   gets(cliente_info[slot].nome);
