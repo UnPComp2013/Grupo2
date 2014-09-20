@@ -107,4 +107,11 @@ void enter(void)
    cliente_info[slot].cep = strtoul(s, '\0', 10);
 }
 
-   
+   int busca_livre(void) // você retorna uma variavel int, portanto a função tem que retornar um int
+{
+
+
+
+
+
+}
