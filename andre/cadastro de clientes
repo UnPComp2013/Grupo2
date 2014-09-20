@@ -98,3 +98,8 @@ void enter(void)
 
    printf("Digite a cidade: ");
    gets(cliente_info[slot].cidade);
+   
+   printf("Digite o estado: ");
+   gets(cliente_info[slot].estado);
+   
+   
