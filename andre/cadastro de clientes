@@ -82,3 +82,7 @@ void enter(void)
  
  slot = busca_livre();
    if (slot == -1)
+{
+	  printf("Lista cheia!");
+	  return;
+   }
