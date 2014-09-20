@@ -102,4 +102,9 @@ void enter(void)
    printf("Digite o estado: ");
    gets(cliente_info[slot].estado);
    
+    printf("Digite o CEP: ");
+   gets(s);
+   cliente_info[slot].cep = strtoul(s, '\0', 10);
+}
+
    
