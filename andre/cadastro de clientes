@@ -89,3 +89,6 @@ void enter(void)
    
    printf("Digite o nome: ");
    gets(cliente_info[slot].nome);
+
+   printf("Digite o telefone: ");
+   gets(cliente_info[slot].telefone);
