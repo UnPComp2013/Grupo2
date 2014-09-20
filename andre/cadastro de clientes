@@ -95,3 +95,6 @@ void enter(void)
 
    printf("Digite o endereco: ");
    gets(cliente_info[slot].rua);
+
+   printf("Digite a cidade: ");
+   gets(cliente_info[slot].cidade);
