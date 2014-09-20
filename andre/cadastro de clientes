@@ -110,8 +110,10 @@ void enter(void)
    int busca_livre(void) // você retorna uma variavel int, portanto a função tem que retornar um int
 {
 
+register int t;
 
-
-
+   for (t=0; cliente_info[t].nome[0] && t<MAX; ++t);
+   if(t==MAX) return -1;
+   return t;
 
 }
