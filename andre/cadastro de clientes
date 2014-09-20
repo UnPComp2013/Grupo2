@@ -33,6 +33,7 @@ int opcao;
 {
 	   opcao = menu_select();
 	   switch(opcao)
+	   
 	  {
 	  case 1: enter();
 		  break;
@@ -78,3 +79,6 @@ void enter(void)
 {
    int slot;
    char s[80];
+ 
+ slot = busca_livre();
+   if (slot == -1)
