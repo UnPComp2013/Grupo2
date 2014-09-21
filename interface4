@@ -1,0 +1,5 @@
+<widget class="QWidget" name="centralWidget">
+   <widget class="QCheckBox" name="checkBox">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
