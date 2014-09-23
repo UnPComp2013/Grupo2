@@ -2,6 +2,8 @@
 #include "ui_cardapio.h"
 #include <segunda1.h>
 #include <terca1.h>
+#include <quarta1.h>
+
 
 cardapio::cardapio(QWidget *parent) :
     QMainWindow(parent),
@@ -34,3 +36,14 @@ void cardapio::on_TERCA_clicked()
  
     delete terca1; 
 }
+
+void cardapio::on_QUARTA_clicked()
+{
+    Quarta1 *quarta1 = new Quarta1(this);
+    quarta1->setModal(true);
+    quarta1->show();
+    quarta1->exec();
+
+    delete quarta1;
+
+    }
