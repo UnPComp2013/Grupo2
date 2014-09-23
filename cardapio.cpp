@@ -59,3 +59,16 @@ void cardapio::on_QUARTA_clicked()
 
     delete quinta1;
 }
+
+void cardapio::on_SEXTA_clicked()
+{
+
+
+        Sexta1 *sexta1 = new Sexta1(this);
+        sexta1->setModal(true);
+        sexta1->show();
+        sexta1->exec();
+
+        delete sexta1;
+
+}
