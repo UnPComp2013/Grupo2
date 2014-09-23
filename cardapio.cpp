@@ -49,3 +49,13 @@ void cardapio::on_QUARTA_clicked()
     delete quarta1;
 
     }
+    
+    void cardapio::on_QUINTA_clicked()
+{
+    Quinta1 *quinta1 = new Quinta1(this);
+    quinta1->setModal(true);
+    quinta1->show();
+    quinta1->exec();
+
+    delete quinta1;
+}
