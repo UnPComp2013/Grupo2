@@ -1,8 +1,10 @@
 /****** Script do comando SelectTopNRows de SSMS  ******/
 SELECT TOP 1000 [codigo_cliente]
       ,[nome]
+      ,[telefone]
       ,[data_nascimento]
       ,[cidade]
+      ,[rua]
+      ,[numero]
       ,[estado]
-      ,[telefone]
   FROM [cadastroRestaurante].[dbo].[cadsatroRestaurante]
