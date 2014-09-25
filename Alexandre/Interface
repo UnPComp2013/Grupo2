@@ -99,3 +99,13 @@
     <string>Cadastro Clientes</string>
    </property>
   </action>
+<action name="actionHistorico_de_consumo">
+   <property name="text">
+    <string>Historico de consumo</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui
