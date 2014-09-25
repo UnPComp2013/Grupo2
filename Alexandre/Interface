@@ -27,6 +27,32 @@
      <string>SAIR</string>
     </property>
    </widget>
+   <widget class="QPushButton" name="pushButton_2">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>20</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Prato do dia</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_3">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>20</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Entregas</string>
+    </property>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menuBar">
    <property name="geometry">
@@ -55,6 +81,8 @@
     <property name="title">
      <string>Visualizar</string>
     </property>
+    <addaction name="actionCadastro_Clientes"/>
+    <addaction name="actionHistorico_de_consumo"/>
    </widget>
    <addaction name="menuArquivo"/>
    <addaction name="menuAdministrativo"/>
@@ -94,12 +122,12 @@
     <string>Modificar preço</string>
    </property>
   </action>
- <action name="actionCadastro_Clientes">
+  <action name="actionCadastro_Clientes">
    <property name="text">
     <string>Cadastro Clientes</string>
    </property>
   </action>
-<action name="actionHistorico_de_consumo">
+  <action name="actionHistorico_de_consumo">
    <property name="text">
     <string>Historico de consumo</string>
    </property>
@@ -108,4 +136,4 @@
  <layoutdefault spacing="6" margin="11"/>
  <resources/>
  <connections/>
-</ui
+</ui>
