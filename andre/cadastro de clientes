@@ -134,3 +134,6 @@ void list(void)
 
    for(t=0; t<MAX; ++t)
    
+{
+	  if(cliente_info[t].nome[0]) { //Faltou o { aqui
+		  printf("%s\n", cliente_info[t].nome);
