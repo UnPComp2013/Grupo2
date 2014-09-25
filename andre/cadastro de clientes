@@ -121,3 +121,5 @@ register int t;
 void deletea(void)
 {
    int n;
+   printf("Digite o registro #: ");
+   scanf("%d", &n);
