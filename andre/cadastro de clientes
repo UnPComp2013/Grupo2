@@ -123,3 +123,6 @@ void deletea(void)
    int n;
    printf("Digite o registro #: ");
    scanf("%d", &n);
+   if(n>=0 && n < MAX)
+	   cliente_info[n].nome[0]='\0';
+}
