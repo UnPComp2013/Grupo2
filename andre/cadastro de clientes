@@ -117,3 +117,7 @@ register int t;
    return t;
 
 }
+/* Apaga um cliente */
+void deletea(void)
+{
+   int n;
