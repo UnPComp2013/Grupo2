@@ -126,3 +126,11 @@ void deletea(void)
    if(n>=0 && n < MAX)
 	   cliente_info[n].nome[0]='\0';
 }
+/* Mostra lista*/
+
+void list(void)
+{
+   register int t;
+
+   for(t=0; t<MAX; ++t)
+   
