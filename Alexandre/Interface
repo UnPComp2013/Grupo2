@@ -13,7 +13,21 @@
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
-  <widget class="QWidget" name="centralWidget"/>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>650</x>
+      <y>290</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>SAIR</string>
+    </property>
+   </widget>
+  </widget>
   <widget class="QMenuBar" name="menuBar">
    <property name="geometry">
     <rect>
@@ -34,19 +48,17 @@
     <property name="title">
      <string>Administrativo</string>
     </property>
-    <widget class="QMenu" name="menuDescontos">
-     <property name="title">
-      <string>Descontos</string>
-     </property>
-     <addaction name="separator"/>
-     <addaction name="actionNovo_cliente"/>
-    </widget>
     <addaction name="separator"/>
-    <addaction name="menuDescontos"/>
     <addaction name="actionModificar_pre_o"/>
+   </widget>
+   <widget class="QMenu" name="menuVisualizar">
+    <property name="title">
+     <string>Visualizar</string>
+    </property>
    </widget>
    <addaction name="menuArquivo"/>
    <addaction name="menuAdministrativo"/>
+   <addaction name="menuVisualizar"/>
   </widget>
   <widget class="QToolBar" name="mainToolBar">
    <attribute name="toolBarArea">
