@@ -94,8 +94,8 @@
     <string>Modificar preço</string>
    </property>
   </action>
- </widget>
- <layoutdefault spacing="6" margin="11"/>
- <resources/>
- <connections/>
-</ui>
+ <action name="actionCadastro_Clientes">
+   <property name="text">
+    <string>Cadastro Clientes</string>
+   </property>
+  </action>
