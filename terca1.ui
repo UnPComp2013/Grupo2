@@ -16,10 +16,10 @@
   <widget class="QListWidget" name="listWidget">
    <property name="geometry">
     <rect>
-     <x>10</x>
-     <y>10</y>
-     <width>351</width>
-     <height>241</height>
+     <x>0</x>
+     <y>20</y>
+     <width>261</width>
+     <height>221</height>
     </rect>
    </property>
    <item>
@@ -39,6 +39,19 @@
      <x>60</x>
      <y>260</y>
      <width>271</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>PushButton</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_2">
+   <property name="geometry">
+    <rect>
+     <x>320</x>
+     <y>20</y>
+     <width>75</width>
      <height>23</height>
     </rect>
    </property>
