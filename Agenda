@@ -1,0 +1,6 @@
+#include <stdio.h>
+#include "Agenda.h"
+
+void AdicionaContato (Agenda &contato, char nome[100], int numero){
+
+
