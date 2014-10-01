@@ -1,0 +1,12 @@
+genda.h
+
+typedef struct {
+
+char nome[100];
+int numero;
+
+} Agenda;
+
+void AdicionaContato (Agenda&, char, int);
+
+void ImprimeContato (Agenda&);
