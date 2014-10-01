@@ -28,6 +28,7 @@
      <string>NOVO</string>
     </property>
     <addaction name="actionNOVO_CLIENTE"/>
+    <addaction name="actionNOVO_FUNCION_RIO"/>
    </widget>
    <addaction name="menuNOVO"/>
   </widget>
@@ -50,6 +51,11 @@
    </property>
    <property name="toolTip">
     <string>CADASTRA UM NOVO CLIENTE</string>
+   </property>
+  </action>
+  <action name="actionNOVO_FUNCION_RIO">
+   <property name="text">
+    <string>NOVO FUNCIONÁRIO</string>
    </property>
   </action>
  </widget>
