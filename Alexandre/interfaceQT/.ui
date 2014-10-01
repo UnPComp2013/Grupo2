@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>400</width>
-    <height>300</height>
+    <width>749</width>
+    <height>461</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -19,10 +19,16 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>400</width>
+     <width>749</width>
      <height>21</height>
     </rect>
    </property>
+   <widget class="QMenu" name="menuNOVO">
+    <property name="title">
+     <string>NOVO</string>
+    </property>
+   </widget>
+   <addaction name="menuNOVO"/>
   </widget>
   <widget class="QToolBar" name="mainToolBar">
    <attribute name="toolBarArea">
@@ -38,3 +44,4 @@
  <resources/>
  <connections/>
 </ui>
+
