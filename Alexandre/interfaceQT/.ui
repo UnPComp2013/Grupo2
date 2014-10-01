@@ -27,6 +27,7 @@
     <property name="title">
      <string>NOVO</string>
     </property>
+    <addaction name="actionNOVO_CLIENTE"/>
    </widget>
    <addaction name="menuNOVO"/>
   </widget>
@@ -39,9 +40,16 @@
    </attribute>
   </widget>
   <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionNOVO_CLIENTE">
+   <property name="text">
+    <string>NOVO CLIENTE</string>
+   </property>
+   <property name="toolTip">
+    <string>CADASTRA UM NOVO CLIENTE</string>
+   </property>
+  </action>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
  <resources/>
  <connections/>
 </ui>
-
