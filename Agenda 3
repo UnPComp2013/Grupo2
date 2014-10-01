@@ -1,0 +1,9 @@
+void ImprimeContato (Agenda &contato){
+
+printf ("Nome: ");
+for (int i = 0; contato.nome[i]; i++)
+printf ("%s", contato.nome[i]);
+
+printf ("\nNumero: %d", contato.numero);
+
+}
