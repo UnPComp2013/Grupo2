@@ -1,0 +1,6 @@
+for (int i = 0; nome[i]; i++)
+contato.nome[i] = nome[i];
+
+contato.numero = numero;
+
+}
