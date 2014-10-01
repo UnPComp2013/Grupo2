@@ -54,6 +54,10 @@
    </property>
   </action>
   <action name="actionNOVO_FUNCION_RIO">
+   <property name="icon">
+    <iconset>
+     <normaloff>imagens/download.jpg</normaloff>imagens/download.jpg</iconset>
+   </property>
    <property name="text">
     <string>NOVO FUNCIONÁRIO</string>
    </property>
