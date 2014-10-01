@@ -1,0 +1,13 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include "Agenda.h"
+
+int main (){
+
+Agenda contato;
+char nome[100] = "Breno";
+
+AdicionaContato (contato, nome, 32826742);
+ImprimeContato (contato);
+
+}
