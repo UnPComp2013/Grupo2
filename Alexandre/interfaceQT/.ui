@@ -41,6 +41,10 @@
   </widget>
   <widget class="QStatusBar" name="statusBar"/>
   <action name="actionNOVO_CLIENTE">
+   <property name="icon">
+    <iconset resource="imagens.qrc">
+     <normaloff>:/imagens/user_add.png</normaloff>:/imagens/user_add.png</iconset>
+   </property>
    <property name="text">
     <string>NOVO CLIENTE</string>
    </property>
@@ -50,6 +54,8 @@
   </action>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
- <resources/>
+ <resources>
+  <include location="imagens.qrc"/>
+ </resources>
  <connections/>
 </ui>
