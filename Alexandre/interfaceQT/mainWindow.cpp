@@ -6,3 +6,7 @@ MainWindow::MainWindow(QWidget *parent) :
 {
     ui->setupUi(this);
 }
+MainWindow::~MainWindow()
+{
+    delete ui;
+}
