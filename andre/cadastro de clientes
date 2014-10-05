@@ -139,3 +139,4 @@ void list(void)
 		  printf("%s\n", cliente_info[t].nome);
 		  printf("%s\n", cliente_info[t].telefone);
 		  printf("%s\n", cliente_info[t].rua);
+		  printf("%s\n", cliente_info[t].cidade);
