@@ -143,3 +143,5 @@ void list(void)
 		  printf("%s\n", cliente_info[t].estado);
 		    printf("%s\n", cliente_info[t].cep);
 	  }
+	}
+}
