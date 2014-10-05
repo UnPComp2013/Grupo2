@@ -138,3 +138,4 @@ void list(void)
 	  if(cliente_info[t].nome[0]) { //Faltou o { aqui
 		  printf("%s\n", cliente_info[t].nome);
 		  printf("%s\n", cliente_info[t].telefone);
+		  printf("%s\n", cliente_info[t].rua);
