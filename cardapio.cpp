@@ -19,15 +19,6 @@ cardapio::~cardapio()
     delete ui;
 }
 
-void cardapio::on_SEGUNDA_clicked()
-{
-   Segunda1 *segunda1 = new Segunda1(this);
-   segunda1->setModal(true);
-   segunda1->show();
-   segunda1->exec();
-
-   delete segunda1;
-}
 
 void cardapio::on_TERCA_clicked()
 {
