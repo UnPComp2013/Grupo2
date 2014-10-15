@@ -20,15 +20,7 @@ cardapio::~cardapio()
 }
 
 
-void cardapio::on_TERCA_clicked()
-{
-    Terca1 *terca1 = new Terca1(this);
-    terca1->setModal(true);
-    terca1->show();
-    terca1->exec();
- 
-    delete terca1; 
-}
+
 
 void cardapio::on_QUARTA_clicked()
 {
