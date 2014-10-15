@@ -4,21 +4,6 @@
 quarta1::quarta1(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::quarta1)
-{
-    ui->setupUi(this);
-    ui->listWidget->addItem("tardelle");
-    ui->listWidget->addItem("tardelle");
-    ui->listWidget->addItem("tardelle");
-    ui->listWidget->addItem("tardelle");
-    ui->listWidget->addItem("tardelle");
-    ui->listWidget->addItem("tardelle");
-    ui->listWidget->addItem("tardelle");
-    ui->listWidget->addItem("tardelle");
-    ui->listWidget->addItem("tardelle");
-    ui->listWidget->addItem("tardelle");
-    ui->listWidget->addItem("tardelle");
-    ui->listWidget->addItem("tardelle");
-}
 
 quarta1::~quarta1()
 {
