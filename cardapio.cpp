@@ -18,16 +18,7 @@ cardapio::~cardapio()
 
 
 
-void cardapio::on_QUARTA_clicked()
-{
-    Quarta1 *quarta1 = new Quarta1(this);
-    quarta1->setModal(true);
-    quarta1->show();
-    quarta1->exec();
 
-    delete quarta1;
-
-    }
     
     void cardapio::on_QUINTA_clicked()
 {
