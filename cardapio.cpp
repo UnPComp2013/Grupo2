@@ -1,6 +1,6 @@
 #include "cardapio.h"
 #include "ui_cardapio.h"
-
+#include <iostream.h>
 
 
 cardapio::cardapio(QWidget *parent) :
@@ -14,12 +14,3 @@ cardapio::~cardapio()
 {
     delete ui;
 }
-
-
-
-
-
-    
-    
-
-
