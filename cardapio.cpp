@@ -1,6 +1,6 @@
 #include "cardapio.h"
 #include "ui_cardapio.h"
-#include <segunda1.h>
+
 
 
 cardapio::cardapio(QWidget *parent) :
