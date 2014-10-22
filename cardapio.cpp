@@ -1,10 +1,6 @@
 #include "cardapio.h"
 #include "ui_cardapio.h"
 #include <segunda1.h>
-#include <terca1.h>
-#include <quarta1.h>
-#include <quinta1.h>
-#include <sexta1.h>
 
 
 cardapio::cardapio(QWidget *parent) :
