@@ -1,0 +1,61 @@
+#include "sql.h"
+#include "string.h"
+sql::sql(){
+
+}
+
+bool sql:: conectar()
+{
+     if(QSqlDatabase::isDriverAvailable("QSQLITE"))
+    {
+        db = QSqlDatabase::addDatabase("QSQLITE"); 
+        db.setDatabaseName(QDir::homePath()+QDir::separator()+"data2.sqlite");
+        bool db_ok = db.open(); //Criamos janela para ver se podemos abrir o BD.
+        qDebug() << (QDir::homePath()+QDir::separator()+"data2.sqlite");
+        return db_ok;  
+
+    }
+    else
+        qDebug() << "Driver nÃ£o disponivel";
+        return false;
+}
+void sql::consulta()
+{
+   this->conectar();
+   if(db.isOpen())
+  {
+     QSqlQuery qry;
+     qry.exec("CREATE TABLE IF NOT EXISTS admins (id integer primary key autoincrement, user text, passwd varchar[8])");
+     QString stmt; //Statement
+     QTextStream txtstr(&stmt);
+     txtstr << "INSERT INTO admins (user, passwd) values (\"" << "admin" << ", " << "12345" <<"\")";
+
+   if(qry.exec(stmt))
+       std::cout<<"sucesso";
+     txtstr << "SELECT * FROM admins";
+     if(qry.exec(stmt))
+     {
+         while(qry.next());
+           {
+           qDebug() << "id:" << qry.value(0).toString();
+           qDebug() << "user: " << qry.value(1).toString();
+           qDebug() << "paswd: " << qry.value(2).toString();
+         }}
+     }
+}
+
+/*void sql::Inserir(int codigo,string nome)
+{
+   this->conectar();
+   if(db.isOpen())
+  {
+     QSqlQuery qry;
+     qry.exec(" (id integer primary key autoincrement, user text, passwd varchar[8])"); //
+     
+     QString stmt; //Statement
+     QTextStream txtstr(&stmt);
+     txtstr = "INSERT INTO admins (user, passwd) values (\"" + "admin" + ", " + "12345" <<"\")";
+
+     qry.exec(stmt);
+   }
+}*/
