@@ -1,0 +1,10 @@
+/****** Script do comando SelectTopNRows de SSMS  ******/
+SELECT TOP 1000 [Nome]
+      ,[idade]
+      ,[rua]
+      ,[cidade]
+      ,[numero]
+      ,[telefone]
+      ,[cpf]
+      ,[Numero CT]
+  FROM [cadastroRestaurante].[dbo].[Cadastro funcionarios]
