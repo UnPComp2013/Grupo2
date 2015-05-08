@@ -4,5 +4,6 @@
    char nome[30];
    char telefone[15];
    char rua[40];
- 
+   char cep[10];
+   char cel[10];
 }
